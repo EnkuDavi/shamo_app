@@ -126,7 +126,9 @@ class SignPage extends StatelessWidget {
               backgroundColor: PrimaryColor,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12))),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, '/home');
+          },
           child: Text(
             'Sign In',
             style: primaryTextStyle.copyWith(fontSize: 16, fontWeight: medium),
